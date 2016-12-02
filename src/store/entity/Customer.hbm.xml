@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 2, 2016 2:10:42 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="store.entity.Customer" table="CUSTOMER" schema="APP">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" length="40" />
+        </property>
+        <property name="address" type="string">
+            <column name="ADDRESS" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>
